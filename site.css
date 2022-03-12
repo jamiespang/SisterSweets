@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         {
             margin: 0;
             padding: 0;
@@ -64,3 +65,12 @@
         
         @media screen and (mid-width: 375 px;
         )
+=======
+    body {
+    Margin-top: 0px;
+    height: 100%;
+    Background-color: #e615b2;
+    Background-image: url("logo2.png");
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+>>>>>>> 2f1feb6e4d0efe8168fff7c1821159c7b4fe9285

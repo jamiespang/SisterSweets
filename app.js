@@ -11,10 +11,6 @@ function closeMenu() {
 }
 
 
-
-
-
-
 // submit button
 const submitBtn = document.getElementById('btn');
 submitBtn.addEventListener('click', (e) => {
