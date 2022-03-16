@@ -1,3 +1,8 @@
+window.addEventListener('load', (Event) = > {
+    console.log('page is fully loaded');
+});
+
+
 // hamburger menu
 const toggleButton = document.getElementById('hamburger');
 const navbarLinks = document.getElementById('navbar');
@@ -14,6 +19,6 @@ function closeMenu() {
 // submit button
 const submitBtn = document.getElementById('btn');
 submitBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    submitBtn.innerText = 'Submitted!';
-});
+            e.preventDefault();
+            submitBtn.innerText = 'Submitted!';
+        }

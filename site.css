@@ -1,99 +1,88 @@
-    {
-        margin: 0;
-        padding: 0;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        margin-top: 0px;
-        height: 100%;
-        Background-color: #e615b2;
-        Background-image: url("logo2.png");
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-    }
-}
-nav>ul {
-    display: inline;
-    padding: 0;
-}
-nav>ul>li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px 0 5px;
-}
-main {
-    display: block;
-    background-image: url("images/background.png");
-    padding-top: 3em;
-    padding-bottom: 3em;
-    min-height: 85%;
-}
-footer {
-    padding: 15px;
-}
-.columns {
-    display: flex;
-}
-@media only screen and (min-width: 768px) {
-    main {
-        display: flex;
-    }
-    
-    aside {
-        margin-left: 2%;
-    }
-}
-.columns-desktop {
-    display: flex;
-    li {
-        list-style: none;
-    }
-    
-    .btn {
-        font-size: 2em;
-        background-color: aqua;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    .btn:hover {
-        background-color: white;
-        position: fixed;
-    }
-    
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-    }
-    
-    .hamburger {
-        position: absolute;
-        top: .5em;
-        right: 2em;
-        font-size: 100px;
-    }
-    
-    .mainContent {
-        width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    /*Social Media*/
-    
-    .social {
-        padding: 2em;
-        size: 2em;
-    }
-    /*Media Query*/
-    
-    @media screen and (mid-width: 375 px;
-    )
+         html,
+     {
+         scroll-behavior: smooth;
+     }
+     
+     header {
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+         align-items: center;
+         width: auto;
+     }
+     
+     .navbar {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: auto;
+     }
+     
+     nav>ul>li {
+         display: flex;
+         flex-direction: column;
+     }
+     
+     body,
+     main {
+         margin: 1em;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         auto-flow (min-content);
+         Background-color: rgb(10, 215, 230);
+         Background-image: url("pinklogo.png");
+         background-repeat: repeat;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     
+     .about {
+         margin: 1em;
+         display: flex;
+         align-items: center;
+         font-size: large;
+         font-weight: absolute;
+         font-display: center;
+         padding-top: 3em;
+         padding-bottom: 3em;
+     }
+     
+     .gallery {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(4, 1fr);
+         border: 15px;
+     }
+     
+     #cookie1,
+     #cookie2 {
+         grid-column-start: 1;
+         grid-column-end: 2;
+     }
+     
+     #cookie3,
+     #cookie4 {
+         grid-column-start: 2;
+         grid-column-end: 3;
+     }
+     
+     #cookie5,
+     #cookie6 {
+         grid-column-start: 3;
+         grid-column-end: 4;
+     }
+     
+     .store {
+         .row {
+             display: flex;
+             flex: 50%;
+         }
+         .footer {
+             padding: none;
+             display: flex;
+             border-spacing: space-between;
+         }
+         /*Social Media*/
+         /*Media Query small phone 600px and below*/
+         <meta name="viewport" content="width=320,initial-scale=1">/*Media Query large device or desktop 992px and above*/
+         <meta name="viewport" content="width=992,initial-scale=1">
