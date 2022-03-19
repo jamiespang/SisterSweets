@@ -3,6 +3,8 @@ window.addEventListener('load', (Event) = > {
 });
 
 
+
+
 // hamburger menu
 const toggleButton = document.getElementById('hamburger');
 const navbarLinks = document.getElementById('navbar');
@@ -13,12 +15,11 @@ toggleButton.addEventListener('click', () => {
 
 function closeMenu() {
     navbarLinks.classList.toggle('active');
-}
 
 
-// submit button
-const submitBtn = document.getElementById('btn');
-submitBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            submitBtn.innerText = 'Submitted!';
-        }
+    // submit button
+    const submitBtn = document.getElementById('btn');
+    submitBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                submitBtn.innerText = 'Submitted!';
+            }

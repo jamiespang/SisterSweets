@@ -1,88 +1,350 @@
-         html,
-     {
-         scroll-behavior: smooth;
-     }
-     
-     header {
-         display: flex;
-         justify-content: space-between;
-         flex-direction: column;
-         align-items: center;
-         width: auto;
-     }
-     
-     .navbar {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         width: auto;
-     }
-     
-     nav>ul>li {
-         display: flex;
-         flex-direction: column;
-     }
-     
-     body,
-     main {
-         margin: 1em;
-         display: flex;
-         flex-wrap: wrap;
-         align-items: center;
-         auto-flow (min-content);
-         Background-color: rgb(10, 215, 230);
-         Background-image: url("pinklogo.png");
-         background-repeat: repeat;
-         font-family: Arial, Helvetica, sans-serif;
-     }
-     
-     .about {
-         margin: 1em;
-         display: flex;
-         align-items: center;
-         font-size: large;
-         font-weight: absolute;
-         font-display: center;
-         padding-top: 3em;
-         padding-bottom: 3em;
-     }
-     
-     .gallery {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: repeat(4, 1fr);
-         border: 15px;
-     }
-     
-     #cookie1,
-     #cookie2 {
-         grid-column-start: 1;
-         grid-column-end: 2;
-     }
-     
-     #cookie3,
-     #cookie4 {
-         grid-column-start: 2;
-         grid-column-end: 3;
-     }
-     
-     #cookie5,
-     #cookie6 {
-         grid-column-start: 3;
-         grid-column-end: 4;
-     }
-     
-     .store {
-         .row {
-             display: flex;
-             flex: 50%;
-         }
-         .footer {
-             padding: none;
-             display: flex;
-             border-spacing: space-between;
-         }
-         /*Social Media*/
-         /*Media Query small phone 600px and below*/
-         <meta name="viewport" content="width=320,initial-scale=1">/*Media Query large device or desktop 992px and above*/
-         <meta name="viewport" content="width=992,initial-scale=1">
+    html,
+    {
+        scroll-behavior: smooth;
+    }
+    
+    P {
+        text-align: center;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: white;
+        cursor: pointer;
+    }
+    /*testingnavbartesting*/
+    /* Add a  background color to the top navigation */
+    
+    .navbar {
+        background-color: white;
+        overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    
+    .navbar a {
+        float: left;
+        color: rgb(10, 215, 230);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* Change the color of links on hover */
+    
+    .navbar a:hover {
+        background-color: #e615b2;
+        color: black;
+    }
+    /* Add a color to the active/current link */
+    
+    .navbar a.active {
+        background-color: #e615b2;
+        color: white;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-outline: black;
+        color: #e615b2;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 24px;
+    }
+    
+    body,
+    main {
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        auto-flow: (min-content);
+        align-items: center;
+        Background-color: rgb(10, 215, 230);
+        Background-image: url("pinklogo.png");
+        background-repeat: repeat;
+        font-family: 'lato', sans-serif;
+        font-size: 24px;
+        text-outline: black;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    
+    font-size: larger;
+}
+.about {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    font-weight: absolute;
+    padding: 15px;
+    font-family: 'lato';
+    color: white;
+    font-size: 24px;
+    text-outline: black;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 15px white;
+    gap: 15px;
+    object-fit: cover;
+    padding: 15px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-size: 20px;
+    text-outline: black;
+    color: white;
+}
+#cookie1,
+#cookie2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#cookie3,
+#cookie4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#cookie5,
+#cookie6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.store {
+    display: flex;
+    flex: 50%;
+    padding: 5 px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    
+    padding: 12px;
+    /* Some padding */
+    
+    border: 1px solid ##e615b2;
+    /* Gray border */
+    
+    border-radius: 4px;
+    /* Rounded borders */
+    
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    
+    margin-top: 6px;
+    /* Add a top margin */
+    
+    margin-bottom: 16px;
+    /* Bottom margin */
+    
+    resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: rgb(10, 215, 230);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, it will change to pink */
+input[type=submit]:hover {
+    background-color: #e615b2;
+}
+
+/* Container color and form font color */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    color: rgb(10, 215, 230);
+}
+
+}
+.footer {
+    padding: none;
+    display: flex;
+    border-spacing: space-between;
+}
+
+/*Social Media*/
+
+/*Media Query small phone 600px and below*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-content: space-between;
+        width: auto;
+    }
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: white;
+        cursor: pointer;
+        h1,
+        h2,
+        h3,
+        h4 {
+            text-outline: black;
+            color: #e615b2;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        
+        body,
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-content: space-evenly;
+            align-items: center;
+            Background-color: rgb(10, 215, 230);
+            Background-image: url("pinklogo.png");
+            background-repeat: repeat;
+            font-family: 'lato', sans-serif;
+            text-outline: black;
+            color: white;
+            font-size: larger;
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+            font-size: large;
+            font-weight: absolute;
+            padding-top: 3em;
+            padding-bottom: 3em;
+            font-family: 'lato';
+            color: white;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 15px white;
+            gap: 15px;
+            object-fit: cover;
+            padding: 15px;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        #cookie1 {
+            grid-row-start: 1;
+        }
+        
+        #cookie2 {
+            grid-row-start: 2;
+        }
+        
+        #cookie3 {
+            grid-row-start: 3;
+        }
+        
+        #cookie4 {
+            grid-row-start: 4;
+        }
+        
+        #cookie5 {
+            grid-row-start: 5;
+        }
+        
+        #cookie6 {
+            grid-row-start: 6;
+        }
+        
+        .store {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding: 5 px;
+        }
+        
+        * Style inputs with type="text",
+        select elements and textareas */ input[type=text],
+        select,
+        textarea {
+            width: 50%;
+            /* Full width */
+            padding: 4px;
+            /* Some padding */
+            border: 1px solid ##e615b2;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 2px;
+            /* Add a top margin */
+            margin-bottom: 4px;
+            /* Bottom margin */
+            resize: vertical
+            /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+        /* Submit button */
+        
+        input[type=submit] {
+            background-color: rgb(10, 215, 230);
+            color: black;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* When moving the mouse over the submit button, it will change to pink */
+        
+        input[type=submit]:hover {
+            background-color: #e615b2;
+        }
+        /* Container color and form font color */
+        
+        .container {
+            border-radius: 5px;
+            background-color: white;
+            padding: 2px;
+            color: rgb(10, 215, 230);
+        }
+    }
+    .footer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: none;
+        border-spacing: space-between;
+    }
