@@ -1,238 +1,446 @@
-         header {
-             display: flex;
-             justify-content: space-between;
-             flex-direction: column;
-             align-items: center;
-             width: auto;
-         }
-         
-         body,
-         main {
-             margin: 1em;
-             display: flex;
-             flex-direction: column;
-             auto-flow: (min-content);
-             align-items: center;
-             Background-color: rgb(10, 215, 230);
-             Background-image: url("pinklogo.png");
-             background-repeat: repeat;
-             font-family: 'lato', sans-serif;
-             font-size: 24px;
-             text-outline: black;
-             color: white;
-             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-             font-size: larger;
-         }
-         
-         p {
-             text-align: center;
-         }
-     }
-     h1,
-     h2,
-     h3,
-     h4 {
-         text-outline: black;
-         color: #e615b2;
-         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-         font-size: 24px;
-     }
-     .about {
-         margin: 1em;
-         display: flex;
-         flex-wrap: wrap;
-         font-size: large;
-         font-weight: absolute;
-         padding: 15px;
-         font-family: 'lato';
-         color: white;
-         font-size: 24px;
-         text-outline: black;
-     }
-     .gallery {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: repeat(2, 1fr);
-         border: 15px white;
-         gap: 15px;
-         object-fit: cover;
-         padding: 15px;
-         color: white;
-         font-size: large;
-         font-weight: bold;
-         font-size: 20px;
-         text-outline: black;
-         color: white;
-     }
-     #cookie1,
-     #cookie2 {
-         grid-column-start: 1;
-         grid-column-end: 2;
-     }
-     #cookie3,
-     #cookie4 {
-         grid-column-start: 2;
-         grid-column-end: 3;
-     }
-     #cookie5,
-     #cookie6 {
-         grid-column-start: 3;
-         grid-column-end: 4;
-     }
-     .store {
-         display: flex;
-         flex: 50%;
-         padding: 5 px;
-     }
-     /* Style inputs with type="text", select elements and textareas */
-     input[type=text],
-     select,
-     textarea {
-         width: 100%;
-         /* Full width */
-         
-         padding: 12px;
-         /* Some padding */
-         
-         border: 2px solid ##e615b2;
-         /* Gray border */
-         
-         border-radius: 4px;
-         /* Rounded borders */
-         
-         box-sizing: border-box;
-         /* Make sure that padding and width stays in place */
-         
-         margin-top: 6px;
-         /* Add a top margin */
-         
-         margin-bottom: 16px;
-         /* Bottom margin */
-         
-         resize: vertical
-         /* Allow the user to vertically resize the textarea (not horizontally) */
-     }
-     /* Submit button */
-     input[type=submit] {
-         background-color: rgb(10, 215, 230);
-         color: black;
-         padding: 12px 20px;
-         border: none;
-         border-radius: 4px;
-         cursor: pointer;
-     }
-     /* When moving the mouse over the submit button, it will change to pink */
-     input[type=submit]:hover {
-         background-color: #e615b2;
-     }
-     /* Container color and form font color */
-     .container {
-         border-radius: 5px;
-         background-color: white;
-         padding: 20px;
-         color: rgb(10, 215, 230);
-     }
- }
- .footer {
-     padding: none;
-     display: flex;
-     border-spacing: space-between;
- }
- /*Social Media*/
- /*Media Query phone*/
- @media only screen and (min-device-width: 320px) and (max-device-width: 670px) {
-     header {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-     }
-     Nav {
-         background-color: #e615b2;
-     }
-     Nav ul {
-         margin: 0;
-         padding: 0;
-     }
-     Nav li {
-         list-style-type: none;
-         Nav a {
-             Display: block;
-             Padding: .8rem 0;
-             Color: rgb(10, 215, 230);
-             Text-align: center;
-             Text-decoration: none;
-         }
-         
-         h1,
-         h2,
-         h3,
-         h4 {
-             text-outline: black;
-             color: #e615b2;
-             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-             align-items: center;
-         }
-         
-         body,
-         main {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
-         
-         .about {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
-         
-         .gallery {
-             display: flex;
-             flex-direction: column;
-             object-fit: contain;
-             border: 1px solid #c3c3c3;
-         }
-         
-         .store {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
-         
-         input[type=text],
-         select,
-         textarea {
-             width: 100%;
-             text-align: left;
-             white-space: wrap;
-             display: inline-block;
-             padding: 4px;
-             border: 1px solid ##e615b2;
-             border-radius: 4px;
-             box-sizing: border-box;
-             margin-top: 2px;
-             margin-bottom: 4px;
-             resize: vertical
-         }
-         /* Submit button */
-         
-         input[type=submit] {
-             background-color: rgb(10, 215, 230);
-             color: black;
-             padding: 12px 20px;
-             border: none;
-             border-radius: 4px;
-             cursor: pointer;
-         }
-         /* When moving the mouse over the submit button, it will change to pink */
-         
-         input[type=submit]:hover {
-             background-color: #e615b2;
-         }
-         /* Container color and form font color */
-         
-         .footer {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e615b2;
+}
+
+
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to turquoise on hover */
+li a:hover {
+    background-color: rgb(10, 215, 230);
+}
+.active {}
+body,
+main {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    auto-flow: (min-content);
+    align-items: center;
+    Background-color: rgb(10, 215, 230);
+    Background-image: url("pinklogo.png");
+    background-repeat: repeat-x;
+    font-family: 'lato', sans-serif;
+    font-size: 24px;
+    text-outline: black;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: larger;
+}
+p {
+    text-align: center;
+}
+
+}
+h1,
+h2,
+h3,
+h4 {
+    text-outline: black;
+    color: #e615b2;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 24px;
+}
+.about {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    font-weight: absolute;
+    padding: 15px;
+    font-family: 'lato';
+    color: white;
+    font-size: 24px;
+    text-outline: black;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4,
+    1fr);
+    grid-template-rows: repeat(2,
+    1fr);
+    border: 15px white;
+    gap: 15px;
+    object-fit: cover;
+    padding: 15px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-size: 20px;
+    text-outline: black;
+    color: white;
+}
+#cookie1,
+#cookie2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#cookie3,
+#cookie4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#cookie5,
+#cookie6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.store {
+    display: grid;
+    grid-template-rows: repeat(1fr,
+    1fr);
+    border: 15px white;
+    gap: 15px;
+    object-fit: cover;
+    padding: 15px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 2px solid ##e615b2;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: rgb(10,
+    215,
+    230);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, it will change to pink */
+input[type=submit]:hover {
+    background-color: #e615b2;
+}
+
+/* Container color and form font color */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    color: rgb(10,
+    215,
+    230);
+}
+
+}
+.footer {
+    padding: none;
+    display: flex;
+    border-spacing: space-between;
+}
+
+/*Social Media*/
+
+/*Media Query phone*/
+@media only screen and (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+    }
+}
+Nav {
+    background-color: #e615b2;
+}
+Nav ul {
+    margin: 0;
+    padding: 0;
+}
+Nav li {
+    list-style-type: none;
+}
+Nav a {
+    display: block;
+    Color: rgb(10,
+    215,
+    230);
+    Text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+    text-outline: black;
+    color: #e615b2;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    align-items: center;
+}
+body,
+main {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+.store {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    text-align: left;
+    white-space: wrap;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid ##e615b2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    resize: vertical
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: rgb(10,
+    215,
+    230);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, it will change to pink */
+input[type=submit]:hover {
+    background-color: #e615b2;
+}
+
+/* Container color and form font color */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Social Media*/
+
+/*Media Query desktop*/
+@media only screen and (min-width:1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+}
+Nav {
+    background-color: #e615b2;
+}
+Nav ul {
+    margin: 0;
+    padding: 0;
+}
+Nav li {
+    list-style-type: none;
+}
+Nav a {
+    display: block;
+    Color: rgb(10,
+    215,
+    230);
+    Text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+    text-outline: black;
+    color: #e615b2;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    align-items: center;
+}
+body,
+main {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    auto-flow: (min-content);
+    align-items: center;
+    Background-color: rgb(10,
+    215,
+    230);
+    Background-image: url("pinklogo.png");
+    background-repeat: repeat;
+    font-family: 'lato',
+    sans-serif;
+    font-size: 24px;
+    text-outline: black;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: larger;
+}
+p {
+    text-align: center;
+}
+
+}
+h1,
+h2,
+h3,
+h4 {
+    text-outline: black;
+    color: #e615b2;
+    text-shadow: -1px -1px -1px -1px#000,
+    font-size: 24px;
+}
+.about {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    font-weight: absolute;
+    padding: 15px;
+    font-family: 'lato';
+    color: white;
+    font-size: 24px;
+    text-outline: black;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4,
+    1fr);
+    grid-template-rows: repeat(2,
+    1fr);
+    border: 15px white;
+    gap: 15px;
+    object-fit: cover;
+    padding: 15px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-size: 20px;
+    text-outline: black;
+    color: white;
+}
+#cookie1,
+#cookie2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#cookie3,
+#cookie4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#cookie5,
+#cookie6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.store {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+}
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    text-align: left;
+    white-space: wrap;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid ##e615b2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    resize: vertical
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: rgb(10,
+    215,
+    230);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, it will change to pink */
+input[type=submit]:hover {
+    background-color: #e615b2;
+}
+
+/* Container color and form font color */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
