@@ -2,20 +2,16 @@ window.addEventListener('load', (Event) => {
     console.log('page is fully loaded');
 });
 }
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+function myFunction(x) {
+    x.classList.toggle("change");
+
 }
+//verify email//
 
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+function isEmail(email) {
+    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    return regex.test(String(email).toLowerCase());
 }
 // submit button//
 const submit = document.getElementById('submit');
@@ -23,3 +19,5 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();
     submit.innerText = 'Submitted!';
 });
+
+fname
