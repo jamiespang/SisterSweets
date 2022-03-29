@@ -4,7 +4,7 @@ window.addEventListener('load', (Event) => {
 
 function myFunction(x) {
     x.classList.toggle("change");
-    document.getElementById('Jamie').classList.toggle("show-menu");
+    document.getElementById('mobile').classList.toggle("show-menu");
 };
 
 //verify email//
