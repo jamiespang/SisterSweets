@@ -1,301 +1,283 @@
-                                                                                      * {
-                                                                                      margin: 0;
-                                                                                      padding: 0;
-                                                                                      box-sizing: border-box;
-                                                                                  }
-                                                                                  
-                                                                                  html {
-                                                                                      scroll-behavior: smooth;
-                                                                                  }
-                                                                                  
-                                                                                  P {
-                                                                                      text-align: center;
-                                                                                  }
-                                                                                  
-                                                                                  header {
-                                                                                      background-color: white;
-                                                                                      text-align: center;
-                                                                                      padding: 14px 16px;
-                                                                                      text-decoration: none;
-                                                                                      font-size: 17px;
-                                                                                  }
-                                                                                  
-                                                                                  body {
-                                                                                      background-color: rgb(10, 215, 230);
-                                                                                  }
-                                                                                  
-                                                                                  li {
-                                                                                      list-style: none;
-                                                                                  }
-                                                                                  
-                                                                                  a {
-                                                                                      text-decoration: none;
-                                                                                  }
-                                                                                  
-                                                                                  .header {
-                                                                                      border-bottom: 1pxsolid #E2E8F0;
-                                                                                  }
-                                                                                  
-                                                                                  .navbar {
-                                                                                      display: flex;
-                                                                                      justify-content: space-between;
-                                                                                      align-items: center;
-                                                                                      padding: 1rem1.5rem;
-                                                                                  }
-                                                                                  
-                                                                                  .animated {
-                                                                                      display: inline-block;
-                                                                                      cursor: pointer;
-                                                                                  }
-                                                                                  
-                                                                                  .bar1,
-                                                                                  .bar2,
-                                                                                  .bar3 {
-                                                                                      width: 35px;
-                                                                                      height: 5px;
-                                                                                      background-color: #333;
-                                                                                      margin: 6px;
-                                                                                      transition: .4s;
-                                                                                  }
-                                                                                  /* Rotate first bar */
-                                                                                  
-                                                                                  .change .bar1 {
-                                                                                      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-                                                                                      transform: rotate(-45deg) translate(-9px, 6px);
-                                                                                  }
-                                                                                  /* Fade out the second bar */
-                                                                                  
-                                                                                  .change .bar2 {
-                                                                                      opacity: 0;
-                                                                                  }
-                                                                                  /* Rotate last bar */
-                                                                                  
-                                                                                  .change .bar3 {
-                                                                                      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-                                                                                      transform: rotate(45deg) translate(-8px, -8px);
-                                                                                  }
-                                                                                  
-                                                                                  .hamburger {
-                                                                                      display: none;
-                                                                                  }
-                                                                                  
-                                                                                  .bar {
-                                                                                      display: block;
-                                                                                      width: 25px;
-                                                                                      height: 3px;
-                                                                                      margin: 5pxauto;
-                                                                                      -webkit-transition: all 0.3sease-in-out;
-                                                                                      transition: all 0.3sease-in-out;
-                                                                                      background-color: #101010;
-                                                                                  }
-                                                                                  
-                                                                                  .nav-menu {
-                                                                                      display: flex;
-                                                                                      justify-content: space-between;
-                                                                                      align-items: center;
-                                                                                  }
-                                                                                  
-                                                                                  .nav-item {
-                                                                                      margin-left: 5rem;
-                                                                                  }
-                                                                                  
-                                                                                  .nav-link {
-                                                                                      font-size: 1.6rem;
-                                                                                      font-weight: 400;
-                                                                                      color: #475569;
-                                                                                  }
-                                                                                  
-                                                                                  .nav-link:hover {
-                                                                                      color: #482ff7;
-                                                                                  }
-                                                                                  
-                                                                                  .nav-link:hover {
-                                                                                      color: #e615b2;
-                                                                                  }
-                                                                                  
-                                                                                  h1,
-                                                                                  h2,
-                                                                                  h3,
-                                                                                  h4 {
-                                                                                      text-outline: black;
-                                                                                      color: #e615b2;
-                                                                                      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                                                                                      font-size: 26px;
-                                                                                  }
-                                                                                  
-                                                                                  main {
-                                                                                      margin: 1em;
-                                                                                      display: flex;
-                                                                                      flex-direction: column;
-                                                                                      align-items: center;
-                                                                                      Background-color: rgb(10, 215, 230);
-                                                                                      Background-image: url("pinklogo.png");
-                                                                                      background-repeat: repeat;
-                                                                                      font-family: 'lato', sans-serif;
-                                                                                      font-size: 24px;
-                                                                                      text-decoration: black;
-                                                                                      color: white;
-                                                                                      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                                                                                  }
-                                                                                  
-                                                                                  p {
-                                                                                      text-align: center;
-                                                                                  }
-                                                                                  
-                                                                                  .about {
-                                                                                      margin: 1em;
-                                                                                      display: flex;
-                                                                                      flex-wrap: wrap;
-                                                                                      font-weight: absolute;
-                                                                                      padding: 15px;
-                                                                                      font-family: 'lato';
-                                                                                      color: white;
-                                                                                      font-size: 24px;
-                                                                                      text-outline: black;
-                                                                                  }
-                                                                                  
-                                                                                  .wrapper {
-                                                                                      display: flex;
-                                                                                      flex-wrap: wrap;
-                                                                                      gap: 15px;
-                                                                                      object-fit: cover;
-                                                                                      padding: 15px;
-                                                                                      color: white;
-                                                                                      font-weight: bold;
-                                                                                      font-size: 20px;
-                                                                                      text-outline: black;
-                                                                                  }
-                                                                                  
-                                                                                  .cookie-picture {
-                                                                                      width: 100%;
-                                                                                      object-fit: fill;
-                                                                                  }
-                                                                                  /* Style inputs with type="text", select elements and textareas */
-                                                                                  
-                                                                                  .container {
-                                                                                      margin: 1em;
-                                                                                      display: flex;
-                                                                                      align-items: center;
-                                                                                      border-radius: 5px;
-                                                                                      background-color: white;
-                                                                                      padding: 20px;
-                                                                                      color: rgb(10, 215, 230);
-                                                                                  }
-                                                                                  
-                                                                                  input[type=text],
-                                                                                  select,
-                                                                                  textarea {
-                                                                                      width: 100%;
-                                                                                      padding: 12px;
-                                                                                      border: 1px solid ##e615b2;
-                                                                                      border-radius: 4px;
-                                                                                      box-sizing: border-box;
-                                                                                      margin-top: 6px;
-                                                                                      margin-bottom: 16px;
-                                                                                  }
-                                                                                  /* Submit button */
-                                                                                  
-                                                                                  input[type=submit] {
-                                                                                      background-color: rgb(10, 215, 230);
-                                                                                      color: black;
-                                                                                      padding: 12px 20px;
-                                                                                      border: none;
-                                                                                      border-radius: 4px;
-                                                                                      cursor: pointer;
-                                                                                  }
-                                                                                  /* When moving the mouse over the submit button, it will change to pink */
-                                                                                  
-                                                                                  input[type=submit]:hover {
-                                                                                      background-color: #e615b2;
-                                                                                  }
-                                                                                  /* Container color and form font color */
-                                                                                  
-                                                                                  .container {
-                                                                                      margin: 1em;
-                                                                                      display: flex;
-                                                                                      align-items: center;
-                                                                                      border-radius: 5px;
-                                                                                      background-color: white;
-                                                                                      padding: 20px;
-                                                                                      color: rgb(10, 215, 230);
-                                                                                  }
-                                                                                  
-                                                                                  footer {
-                                                                                      padding: none;
-                                                                                      display: flex;
-                                                                                      border-spacing: space-between;
-                                                                                  }
-                                                                                  /*Media Query phone*/
-                                                                                  
-                                                                                  @media (max-width:768px) {
-                                                                                      .nav-menu {
-                                                                                          position: fixed;
-                                                                                          left: -100%;
-                                                                                          top: 5rem;
-                                                                                          flex-direction: column;
-                                                                                          background-color: #fff;
-                                                                                          width: 100%;
-                                                                                          border-radius: 10px;
-                                                                                          text-align: center;
-                                                                                          transition: 0.3s;
-                                                                                          box-shadow: 010px27pxrgba(0, 0, 0, 0.05);
-                                                                                      }
-                                                                                      .nav-menu.active {
-                                                                                          left: 0;
-                                                                                      }
-                                                                                      .nav-item {
-                                                                                          margin: 2.5rem0;
-                                                                                      }
-                                                                                      .hamburger {
-                                                                                          width: 35px;
-                                                                                          height: 5px;
-                                                                                          background-color: black;
-                                                                                          margin: 6px 0;
-                                                                                          display: block;
-                                                                                          cursor: pointer;
-                                                                                      }
-                                                                                      .hamburger.active.bar:nth-child(2) {
-                                                                                          opacity: 0;
-                                                                                      }
-                                                                                      .hamburger.active.bar:nth-child(1) {
-                                                                                          -webkit-transform: translateY(8px) rotate(45deg);
-                                                                                          transform: translateY(8px) rotate(45deg);
-                                                                                      }
-                                                                                      .hamburger.active.bar:nth-child(3) {
-                                                                                          -webkit-transform: translateY(-8px) rotate(-45deg);
-                                                                                          transform: translateY(-8px) rotate(-45deg);
-                                                                                      }
-                                                                                      .main {
-                                                                                          display: flex;
-                                                                                          flex-direction: row;
-                                                                                          width: min-content;
-                                                                                      }
-                                                                                      .about {
-                                                                                          display: flex;
-                                                                                          flex-direction: column;
-                                                                                          width: max-content;
-                                                                                      }
-                                                                                      .wrapper {
-                                                                                          display: grid;
-                                                                                          grid-template-rows: repeat (1fr);
-                                                                                          grid-template-columns: repeat (1fr);
-                                                                                          gap: 5px;
-                                                                                      }
-                                                                                      .cookie-picture {
-                                                                                          display: grid;
-                                                                                          grid-template-columns: 1fr 1fr;
-                                                                                      }
-                                                                                      .store {
-                                                                                          display: flex;
-                                                                                          flex-direction: column;
-                                                                                          width: min-content;
-                                                                                      }
-                                                                                      .container {
-                                                                                          margin: .5em;
-                                                                                          display: flex;
-                                                                                          align-items: center;
-                                                                                          border-radius: 1px;
-                                                                                          background-color: white;
-                                                                                          padding: 5px;
-                                                                                          color: rgb(10, 215, 230);
-                                                                                      }
+                                                                          * {
+                                                                          margin: 0;
+                                                                          padding: 0;
+                                                                          box-sizing: border-box;
+                                                                      }
+                                                                      
+                                                                      html {
+                                                                          scroll-behavior: smooth;
+                                                                      }
+                                                                      
+                                                                      P {
+                                                                          text-align: center;
+                                                                      }
+                                                                      
+                                                                      header {
+                                                                          background-color: white;
+                                                                          text-align: center;
+                                                                          padding: 14px 16px;
+                                                                          text-decoration: none;
+                                                                          font-size: 17px;
+                                                                      }
+                                                                      
+                                                                      body {
+                                                                          background-color: rgb(10, 215, 230);
+                                                                      }
+                                                                      
+                                                                      li {
+                                                                          list-style: none;
+                                                                      }
+                                                                      
+                                                                      a {
+                                                                          text-decoration: none;
+                                                                      }
+                                                                      
+                                                                      .header {
+                                                                          border-bottom: 1pxsolid #E2E8F0;
+                                                                      }
+                                                                      
+                                                                      .mobile-nav {
+                                                                          display: none;
+                                                                      }
+                                                                      
+                                                                      .show-menu {
+                                                                          display: block;
+                                                                      }
+                                                                      
+                                                                      .navbar {
+                                                                          display: flex;
+                                                                          justify-content: space-between;
+                                                                          align-items: center;
+                                                                          padding: 1rem1.5rem;
+                                                                      }
+                                                                      
+                                                                      .animated {
+                                                                          display: none;
+                                                                          cursor: pointer;
+                                                                      }
+                                                                      
+                                                                      .bar1,
+                                                                      .bar2,
+                                                                      .bar3 {
+                                                                          width: 35px;
+                                                                          height: 5px;
+                                                                          background-color: #e615b2;
+                                                                          margin: 6px;
+                                                                          transition: .4s;
+                                                                      }
+                                                                      /* Rotate first bar */
+                                                                      
+                                                                      .change .bar1 {
+                                                                          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                                                                          transform: rotate(-45deg) translate(-9px, 6px);
+                                                                      }
+                                                                      /* Fade out the second bar */
+                                                                      
+                                                                      .change .bar2 {
+                                                                          opacity: 0;
+                                                                      }
+                                                                      /* Rotate last bar */
+                                                                      
+                                                                      .change .bar3 {
+                                                                          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                                                                          transform: rotate(45deg) translate(-8px, -8px);
+                                                                      }
+                                                                      
+                                                                      .nav-menu {
+                                                                          display: flex;
+                                                                          justify-content: space-between;
+                                                                          align-items: center;
+                                                                      }
+                                                                      
+                                                                      .nav-item {
+                                                                          margin-left: 5rem;
+                                                                      }
+                                                                      
+                                                                      .nav-link {
+                                                                          font-size: 1.6rem;
+                                                                          font-weight: 400;
+                                                                          color: #475569;
+                                                                      }
+                                                                      
+                                                                      .nav-link:hover {
+                                                                          color: #e615b2;
+                                                                      }
+                                                                      
+                                                                      h1,
+                                                                      h2,
+                                                                      h3,
+                                                                      h4 {
+                                                                          text-outline: black;
+                                                                          color: #e615b2;
+                                                                          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                                                                          font-size: 26px;
+                                                                      }
+                                                                      
+                                                                      main {
+                                                                          margin: 1em;
+                                                                          display: flex;
+                                                                          flex-direction: column;
+                                                                          align-items: center;
+                                                                          Background-color: rgb(10, 215, 230);
+                                                                          Background-image: url("pinklogo.png");
+                                                                          background-repeat: repeat;
+                                                                          font-family: 'lato', sans-serif;
+                                                                          font-size: 24px;
+                                                                          text-decoration: black;
+                                                                          color: white;
+                                                                          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                                                                      }
+                                                                      
+                                                                      p {
+                                                                          text-align: center;
+                                                                      }
+                                                                      
+                                                                      .about {
+                                                                          margin: 1em;
+                                                                          display: flex;
+                                                                          flex-wrap: wrap;
+                                                                          font-weight: absolute;
+                                                                          padding: 15px;
+                                                                          font-family: 'lato';
+                                                                          color: white;
+                                                                          font-size: 24px;
+                                                                          text-outline: black;
+                                                                      }
+                                                                      
+                                                                      .wrapper {
+                                                                          display: flex;
+                                                                          flex-wrap: wrap;
+                                                                          gap: 15px;
+                                                                          object-fit: cover;
+                                                                          padding: 15px;
+                                                                          color: white;
+                                                                          font-weight: bold;
+                                                                          font-size: 20px;
+                                                                          text-outline: black;
+                                                                      }
+                                                                      
+                                                                      .cookie-picture {
+                                                                          width: 100%;
+                                                                          object-fit: fill;
+                                                                      }
+                                                                      /* Container color and form font color */
+                                                                      
+                                                                      .container {
+                                                                          margin: 1em;
+                                                                          display: flex;
+                                                                          align-items: center;
+                                                                          border-radius: 5px;
+                                                                          background-color: white;
+                                                                          padding: 20px;
+                                                                          color: rgb(10, 215, 230);
+                                                                      }
+                                                                      
+                                                                      input[type=text],
+                                                                      select,
+                                                                      textarea {
+                                                                          width: 100%;
+                                                                          padding: 12px;
+                                                                          border: 1px solid ##e615b2;
+                                                                          border-radius: 4px;
+                                                                          box-sizing: border-box;
+                                                                          margin-top: 6px;
+                                                                          margin-bottom: 16px;
+                                                                      }
+                                                                      /* Submit button */
+                                                                      
+                                                                      #submit {
+                                                                          background-color: rgb(10, 215, 230);
+                                                                          color: black;
+                                                                          padding: 12px 20px;
+                                                                          border: none;
+                                                                          border-radius: 4px;
+                                                                          cursor: pointer;
+                                                                      }
+                                                                      
+                                                                      #submitted {
+                                                                          background-color: black;
+                                                                          color: rgb(10, 215, 230);
+                                                                          padding: 12px 20px;
+                                                                          border: none;
+                                                                          border-radius: 4px;
+                                                                          cursor: pointer;
+                                                                      }
+                                                                      
+                                                                      footer {
+                                                                          padding: none;
+                                                                          display: flex;
+                                                                          border-spacing: space-between;
+                                                                      }
+                                                                      /*Media Query phone*/
+                                                                      
+                                                                      @media (max-width:768px) {
+                                                                          .nav-menu {
+                                                                              position: fixed;
+                                                                              left: -100%;
+                                                                              top: 5rem;
+                                                                              flex-direction: column;
+                                                                              background-color: #fff;
+                                                                              width: 100%;
+                                                                              border-radius: 10px;
+                                                                              text-align: center;
+                                                                              transition: 0.3s;
+                                                                              box-shadow: 010px27pxrgba(0, 0, 0, 0.05);
+                                                                          }
+                                                                          .nav-menu.active {
+                                                                              left: 0;
+                                                                          }
+                                                                          .nav-item {
+                                                                              margin: 2.5rem0;
+                                                                          }
+                                                                          .animated {
+                                                                              display: inline-block;
+                                                                              cursor: pointer;
+                                                                          }
+                                                                          /* Rotate first bar */
+                                                                          .change .bar1 {
+                                                                              -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                                                                              transform: rotate(-45deg) translate(-9px, 6px);
+                                                                          }
+                                                                          /* Fade out the second bar */
+                                                                          .change .bar2 {
+                                                                              opacity: 0;
+                                                                          }
+                                                                          /* Rotate last bar */
+                                                                          .change .bar3 {
+                                                                              -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                                                                              transform: rotate(45deg) translate(-8px, -8px);
+                                                                          }
+                                                                          .main {
+                                                                              display: flex;
+                                                                              flex-direction: row;
+                                                                              width: min-content;
+                                                                          }
+                                                                          .about {
+                                                                              display: flex;
+                                                                              flex-direction: column;
+                                                                              width: max-content;
+                                                                          }
+                                                                          .wrapper {
+                                                                              display: grid;
+                                                                              grid-template-rows: repeat (1fr);
+                                                                              grid-template-columns: repeat (1fr);
+                                                                              gap: 5px;
+                                                                          }
+                                                                          .cookie-picture {
+                                                                              display: grid;
+                                                                              grid-template-columns: 1fr 1fr;
+                                                                          }
+                                                                          .store {
+                                                                              display: flex;
+                                                                              flex-direction: column;
+                                                                              width: min-content;
+                                                                          }
+                                                                          .container {
+                                                                              margin: .5em;
+                                                                              display: flex;
+                                                                              align-items: center;
+                                                                              border-radius: 1px;
+                                                                              background-color: white;
+                                                                              padding: 5px;
+                                                                              color: rgb(10, 215, 230);
+                                                                          }
