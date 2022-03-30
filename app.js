@@ -7,8 +7,6 @@ function myFunction(x) {
     document.getElementById('mobile').classList.toggle("show-menu");
 };
 
-//verify email//
-
 
 // submit button//
 
