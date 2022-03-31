@@ -82,24 +82,24 @@
         of 2021, we quit our corporate jobs and opened a shop in our hometown.</p>
     <div class="about">
         <img src="sisters.jpg" width="75%" height="75%" alt="Jamie and Amy">
-        <figcaption>
+        <caption>
             <caption>Amy and Jamie</caption>
     </div>
 
     <!--Cookies-->
     <h3>COOKIES FOR ALL OCCASIONS:</h3>
-    <div class="wrapper"><img class="cookie picture" src="1cookie.jpg" width="300" height="300" alt="1st Birthday Cookie">
-        <caption>Birthday Cookies</caption>
-        <img class="cookie picture" src="christmas.jpg" width="300" height="300" alt=" Christmas Cookies ">
-        <caption>Christmas Cookies</caption>
-        <img class="cookie picture" src="july4th.jpg" width="300" height="300" alt="Christmas Cookies">
-        <caption>4th of July Cookies</caption>
-        <img class="cookie picture " src="display.jpg" width="300" height="300" alt="display case">
-        <caption>Cookie case</caption>
-        <img class="cookie picture" src="dogcookie.jpg" width="300" height="300" alt="dog cookies">
-        <caption>Dog cookies</caption>
-        <img class="cookie picture" src="cookiecake.jpg" width="300" height="300" alt="Cookie Cakes">
-        <caption>Cookie cakes are also available</caption>
+    <div class="wrapper"><img class="cookie-picture" src="1cookie.jpg" width="300px" height="300px" alt="1st Birthday Cookie">
+        <figcaption>Birthday Cookies</figcaption>
+        <img class="cookie-picture" src="christmas.jpg" width="300" height="300" alt=" Christmas Cookies ">
+        <figcaption>Christmas Cookies</figcaption>
+        <img class="cookie-picture" src="july4th.jpg" width="300" height="300" alt="Christmas Cookies ">
+        <figcaption>4th of July Cookies</figcaption>
+        <img class="cookie-picture" src="display.jpg" width="300" height="300" alt="display case ">
+        <figcaption>Cookie case</figcaption>
+        <img class="cookie-picture" src="dogcookie.jpg" width="300" height="300" alt="dog cookies ">
+        <figcaption>Dog cookies</figcaption>
+        <img class="cookie-picture" src="cookiecake.jpg" width="300" height="300" alt="Cookie Cakes ">
+        <figcaption>Cookie cakes are also available</figcaption>
     </div>
 
     <!--Store-->
@@ -108,25 +108,26 @@
         <br>Email: sisters@sistersweets.com </div>
         <br>Hours:<br>Monday-Sunday: 11a-7p<br></p>
 
-    <div class="wrapper">
-        <img class="cookie picture" img src="storefront.jpg" width="300" height="300" alt="Store front"><br>
-        <caption>Store Front</caption>
+    <div class="wrapper ">
+        <img class="cookie picture " img src="storefront.jpg " width="300 " height="300 " alt="Store front "><br>
+        <figcaption>Store Front</figcaption>
 
-        <img class="cookie picture" img src="interior.jpg" width="300" height="300" alt="Store Interior">
-        <caption>Store Interior</caption>
+        <img class="cookie picture " img src="interior.jpg " width="300 " height="300 " alt="Store Interior ">
+        <figcaption>Store Interior</figcaption>
     </div>
 
     <h3>To receive coupons and information about events, specials and classes,<br> please complete the form below:<br></h3>
-    <div class="container">
+    <div class="container ">
         <form action=" action_page.php ">
             <label for="fname">First Name</label>
-            <input type="text" id="fname " name="fistname" placeholder="Your name... ">
+            <input type="text" id="fname" name="fistname" placeholder="Your name... ">
             <label for="lname">Last Name</label>
-            <input type="text" id="lname " name="lastname" placeholder="Your last name.. ">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.. ">
             <label for="email">Email Address</label>
-            <input type="text" id="email " name="email" placeholder="Your email address.. ">
-            <button type="button" onclick="submitEmail(this)" name="submit" id="submit">Submit</button><br> </form>
-        <br></div>
+            <input type="text" id="email" name="email" placeholder="Your email address.. ">
+            <button type="button" name="" submit id="submit" value="submit" onclick="myFunc(this.parentElement)">Submit</button><br>
+            <p id="thanks"></p>
+            <br></div>
 
     <h3>
         <p>Follow Us on Social Media</p>
@@ -140,7 +141,29 @@
         1000 Freedom Way, Independence, KY 41051| 859-555-1000|sisters@sistersweets.com<br> © 2022 Sister Sweets Cookies. All rights reserved.
     </footer>
 
+    <script>
+        var text = "";
 
+        function getBulletAction(form) {
+            text = form[0].value; //first input element. In this case, the first value is first name
+            return form[0].value;
+        }
+
+        function myFunc(form) {
+            var inputText = getBulletAction(form);
+            if (text == "") {
+                alert("Please add your first name.");
+            } else {
+                document.getElementById("thanks").innerHTML = getAction();
+            }
+        }
+
+        function getAction() { //return the name
+            let message = "Thank you for subscribing, " + text + "!"
+
+            return message;
+        }
+    </script>
 </main>
 
 </html>
